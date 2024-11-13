@@ -5,15 +5,15 @@ on: workflow_dispatch
 jobs:
   Deploy-job:
     runs-on: self-hosted
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Nodejs setup
-          uses: actions/setup-node@v2
+      - name: Nodejs setup
+        uses: actions/setup-node@v2
 
-        - name: install dependencies
-          run: npm install
+      - name: install dependencies
+        run: npm install
 
-        - name: Deploy to aws
-          run: pm2 start server.js
+      - name: Deploy to aws
+        run: pm2 start server.js
