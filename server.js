@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/ping", (req, res) => {
-    res.send("Hello world Mr. Pong");
+    res.send("Hello world Mr. Pong, How are you ?");
 })
 
 const port = 3000
