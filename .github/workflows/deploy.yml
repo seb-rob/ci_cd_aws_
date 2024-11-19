@@ -20,3 +20,6 @@ jobs:
 
       - name: Deploy to aws
         run: pm2 start ./server.js
+
+
+#######  SUCCESSFUL ################
