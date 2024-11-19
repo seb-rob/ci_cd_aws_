@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Deploy to aws
-        run: pm2 start ./server.js
+        run: pm2 restart ./server.js || pm2 start ./server.js
 
 
 #######  SUCCESSFUL ################
