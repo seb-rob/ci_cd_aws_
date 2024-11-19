@@ -1,6 +1,9 @@
 name: "Deploy to AWS_"
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   Deploy-job:
@@ -16,4 +19,4 @@ jobs:
         run: npm install
 
       - name: Deploy to aws
-        run: pm2 start server.js
+        run: pm2 restart server.js
