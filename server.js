@@ -9,5 +9,5 @@ app.get("/ping", (req, res) => {
     res.send("Hello world Mr. Pong, How are you ?");
 })
 
-const port = 3000
+const port = 3001
 app.listen(port, () => console.log(`app is runningn on port ${port}`))
